@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>  
+  <style>
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 140 auto;
+  }    
+
+  </style>
+
+</head>
+<body background="https://i.makeagif.com/media/4-16-2015/g9p90k.gif">
+    <nav>
+    <div class="nav-wrapper black">
+      <a href="/" class="brand-logo cyan-text">Psychic</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        
+        
+        
+        <li><a href="/"><i class="large material-icons cyan-text">home</i></a></li>
+        <li><a href="/fire"><i class="large material-icons cyan-text">whatshot</i></a></li>
+        <li><a href="/grass"><i class="large material-icons cyan-text">filter_vintage</i></a></li>
+        <li><a href="/lightning"><i class="large material-icons cyan-text">flash_on</i></a></li>
+        <li><a href="/fairy"><i class="large material-icons cyan-text">bubble_chart</i></a></li>
+        <li><a href="/darkness"><i class="large material-icons cyan-text">brightness_2</i></a></li>
+        <li><a href="/metal"><i class="large material-icons cyan-text">build</i></a></li>
+        <li><a href="/water"><i class="large material-icons cyan-text">invert_colors</i></a></li>
+        <li><a href="/colorless"><i class="large material-icons cyan-text">color_lens</i></a></li>
+                <li><a href="/dragon"><i class="large material-icons cyan-text">spa</i></a></li>
+
+        
+        
+        
+      </ul>
+    </div>
+  </nav>
+ 
+   <main> 
+
+     <% data.cards.forEach(function(card){ %>
+       <img src="<%= card.imageUrl %>" />
+     <% }) %>
+     </main>
+      <footer class="page-footer black">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="cyan-text">Footer Content</h5>
+                <p class="cyan-text text-lighten-4">The link is the credit and the reason this site works the way it does</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="cyan-text">Sources</h5>
+                <ul>
+                  <li><a class="cyan-text text-lighten-3" href="https://docs.pokemontcg.io">Pokemon API Website</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            </div>
+          </div>
+        </footer>
+</body>
